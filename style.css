@@ -1,8 +1,21 @@
+*{
+    background-image: url("paper.jpg");
+    font-family: 'Patrick Hand', cursive;
+}
 table {
     border-collapse: collapse;
     margin: 15px 0;
 }
-
+header{
+    font-family: 'Permanent Marker', cursive;
+    font-size: xx-large;
+    text-decoration: underline;
+    color: #a50000;
+}
+header>img{
+    /*width:64px;*/
+    /*height:64px;*/
+}
 td, th {
     border: 1px solid black;
     padding: 5px 10px;
