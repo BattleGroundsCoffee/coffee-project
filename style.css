@@ -1,4 +1,4 @@
-*{
+body{
     background-image: url("paper.jpg");
     font-family: 'Patrick Hand', cursive;
 }
@@ -11,6 +11,7 @@ header{
     font-size: xx-large;
     text-decoration: underline;
     color: #a50000;
+    margin-top: 1%;
 }
 header>img{
     /*width:64px;*/
@@ -28,7 +29,52 @@ div#coffees{
     color: darkred;
     margin-left: 10px;
     margin-right: 10px;
+    float:left;
 }
 .coffee-box{
     float:left;
+}
+#coffee-search{
+    /*margin-left:50%;*/
+
+}
+#name-filter{
+    /*font-family: 'Permanent Marker', cursive;*/
+    position:fixed;
+    left: 5%;
+    top:35%;
+
+}
+#create-custom{
+    position:fixed;
+    left: 5%;
+    top:55%;
+}
+form#create-custom h4{
+    font-family: 'Permanent Marker', cursive;
+    color: darkred;
+}
+form#roast-filter{
+    position:fixed;
+    left: 5%;
+    top:15%;
+}
+form#roast-filter>h4{
+    font-family: 'Permanent Marker', cursive;
+    color: darkred;
+}
+form#name-filter{
+    float:left;
+    margin-right: 5%;
+}
+form#name-filter h4{
+    font-family: 'Permanent Marker', cursive;
+    color: darkred;
+}
+div#coffees{
+    margin-top:3%;
+    margin-left:35%;
+}
+input#custom-name{
+    margin-top:5px;
 }
