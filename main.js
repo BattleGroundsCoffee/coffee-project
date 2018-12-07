@@ -100,15 +100,36 @@ function altText(){
     document.getElementById('rfLabel').innerText = "Choose Your Alignment";
     document.getElementById('nfLabel').innerText = "Find Your Champion";
     document.getElementById('customLabel').innerText = "Create a Warrior";
-    // document.getElementById('roastSelection2').innerHTML = <option value='light'>Tacos</option>
-    //     <option value='medium'>medium</option>
-    //     <option value='dark'>dark</option>;
 
+    // CHANGING ALT TEXT FOR SELECTOR 2
+    var selector = document.querySelector("#roast-selection2");
+    console.log(selector);
+    selector.options[0].innerText="Good";
+    selector.options[1].innerText="Neutral";
+    selector.options[2].innerText="Evil";
+
+    //CHANGING ALT TEXT FOR SELECTOR 1
+    var selector1 = document.querySelector("#roast-selection");
+    selector1.options[0].innerText="Good";
+    selector1.options[1].innerText="Neutral";
+    selector1.options[2].innerText="Evil";
 }
 function plainText(){
     document.getElementById('rfLabel').innerText = "Filter by Roast";
     document.getElementById('nfLabel').innerText = "Filter by Name";
     document.getElementById('customLabel').innerText = "Add a Coffee";
+    // CHANGING ALT TEXT FOR SELECTOR 2
+    var selector = document.querySelector("#roast-selection2");
+    console.log(selector);
+    selector.options[0].innerText="Light";
+    selector.options[1].innerText="Medium";
+    selector.options[2].innerText="Dark";
+
+    //CHANGING ALT TEXT FOR SELECTOR 1
+    var selector1 = document.querySelector("#roast-selection");
+    selector1.options[0].innerText="Light";
+    selector1.options[1].innerText="Medium";
+    selector1.options[2].innerText="Dark";
 }
 function clear2(){
     results.innerHTML = renderCoffees(coffees);
