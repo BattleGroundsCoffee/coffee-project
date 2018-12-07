@@ -92,6 +92,8 @@ function createCustom(e){
     console.log(customCoffee);
     coffees.push(customCoffee);
     results.innerHTML = renderCoffees(coffees);
+    document.getElementById('custom-name').value="";
+
 }
 document.getElementById('altTextButton').addEventListener('click', altText);
 document.getElementById('plainTextButton').addEventListener('click', plainText);
