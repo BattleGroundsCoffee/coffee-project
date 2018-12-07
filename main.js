@@ -132,5 +132,6 @@ function plainText(){
     selector1.options[2].innerText="Dark";
 }
 function clear2(){
+    document.getElementById('coffee-search').value="";
     results.innerHTML = renderCoffees(coffees);
 }

@@ -58,6 +58,8 @@ form#roast-filter{
     position:fixed;
     left: 5%;
     top:10%;
+    /*background-color: antiquewhite;*/
+    /*opacity: .55;*/
 }
 form#roast-filter>h4{
     font-family: 'Permanent Marker', cursive;
@@ -77,4 +79,7 @@ div#coffees{
 }
 input#custom-name{
     margin-top:5px;
+}
+div#sideBox{
+
 }
