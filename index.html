@@ -15,7 +15,7 @@
     </header>
 
     <form id="roast-filter">
-        <h4>Filter by Roast</h4>
+        <h4 id="rfLabel">Filter by Roast</h4>
         <label for="roast-selection"></label>
         <select id="roast-selection">
             <option>light</option>
@@ -23,27 +23,32 @@
             <option>dark</option>
         </select>
         <input id="submit" type="submit" />
+        <input id="clear-btn" type="button" value="Clear" />
     </form>
     <form id="name-filter">
         <div>
-        <h4>Filter by Name</h4>
+        <h4 id="nfLabel">Filter by Name</h4>
         <input id="coffee-search" type="text">
         </div>
     </form>
     <form id="create-custom">
         <div>
-            <h4>Add a Coffee</h4>
+            <h4 id="customLabel">Add a Coffee</h4>
             <label for="roast-selection2"></label>
             <select id="roast-selection2">
-                <option>light</option>
-                <option>medium</option>
-                <option>dark</option>
+                <option value="light">Light</option>
+                <option value = "medium">Medium </option>
+                <option value = "dark">Dark</option>
             </select>
             <input id="submit2" type="submit"><br>
-            <input id="custom-name" type="text">
+            <input id="custom-name" type="text"><br><br><br>
+    <input type="button" id="altTextButton" onclick="altText()" value = "Alt Text">
+    <input type="button" id="plainTextButton" value="Plain Text">
         </div>
     </form>
 <div id="coffees" class="col-6">
+
+
 
 </div>
     <script src="main.js"></script>

@@ -42,13 +42,13 @@ div#coffees{
     /*font-family: 'Permanent Marker', cursive;*/
     position:fixed;
     left: 5%;
-    top:35%;
+    top:30%;
 
 }
 #create-custom{
     position:fixed;
     left: 5%;
-    top:55%;
+    top:50%;
 }
 form#create-custom h4{
     font-family: 'Permanent Marker', cursive;
@@ -57,7 +57,7 @@ form#create-custom h4{
 form#roast-filter{
     position:fixed;
     left: 5%;
-    top:15%;
+    top:10%;
 }
 form#roast-filter>h4{
     font-family: 'Permanent Marker', cursive;
@@ -73,7 +73,7 @@ form#name-filter h4{
 }
 div#coffees{
     margin-top:3%;
-    margin-left:35%;
+    margin-left:30%;
 }
 input#custom-name{
     margin-top:5px;

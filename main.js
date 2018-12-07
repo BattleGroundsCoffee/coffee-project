@@ -73,5 +73,43 @@ function refineList(){
     });
     results.innerHTML = renderCoffees(filteredCoffees);
 }
-
 submitButton.addEventListener('click', updateCoffees);
+var submit2 = document.getElementById('submit2');
+submit2.addEventListener('click', createCustom);
+var clearButton = document.getElementById('clear-btn');
+clearButton.addEventListener('click', clear2);
+
+
+function createCustom(e){
+    e.preventDefault(); // don't submit the form, we just want to update the data
+    var newName = document.getElementById('custom-name').value;
+    var newRoast = document.getElementById('roast-selection2').value;
+    var newId = coffees.length+1;
+    var customCoffee = {};
+    customCoffee.id= newId;
+    customCoffee.name = newName;
+    customCoffee.roast= newRoast;
+    console.log(customCoffee);
+    coffees.push(customCoffee);
+    results.innerHTML = renderCoffees(coffees);
+}
+document.getElementById('altTextButton').addEventListener('click', altText);
+document.getElementById('plainTextButton').addEventListener('click', plainText);
+
+function altText(){
+    document.getElementById('rfLabel').innerText = "Choose Your Alignment";
+    document.getElementById('nfLabel').innerText = "Find Your Champion";
+    document.getElementById('customLabel').innerText = "Create a Warrior";
+    // document.getElementById('roastSelection2').innerHTML = <option value='light'>Tacos</option>
+    //     <option value='medium'>medium</option>
+    //     <option value='dark'>dark</option>;
+
+}
+function plainText(){
+    document.getElementById('rfLabel').innerText = "Filter by Roast";
+    document.getElementById('nfLabel').innerText = "Filter by Name";
+    document.getElementById('customLabel').innerText = "Add a Coffee";
+}
+function clear2(){
+    results.innerHTML = renderCoffees(coffees);
+}
